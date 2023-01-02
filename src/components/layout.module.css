@@ -27,3 +27,9 @@ body {
   flex: 1;
   padding: 0;
 }
+p{
+  font-size: 18px;
+}
+p,h1 ,h2,h3{
+  font-style:oblique
+}

@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    margin-top: 10rem;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+.link :hover {
+    text-decoration: underline;
+}
+.img {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.imgpos{
+    justify-content: left;
+    margin-left: 25px;
+}
+.textpos{
+    justify-content: right;
+    margin-left: 3rem;
+}
+.h3description{
+    max-width: 500px;
+}
