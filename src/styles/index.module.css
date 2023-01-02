@@ -1,0 +1,6 @@
+.text {
+    flex: 1;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top:5rem
+}

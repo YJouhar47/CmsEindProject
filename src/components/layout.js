@@ -1,13 +1,8 @@
-import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { 
-  container, 
-  nav, 
-  navLinks, 
-  navLinkItem, 
-  navLinkText, 
-  siteTitle 
-} from './layout.module.css'
+import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import {container, main} from './layout.module.css'
+import Navbar from "./Navbar/Navbar"
+import Footer from "./Footer/Footer"
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -21,37 +16,12 @@ const Layout = ({ pageTitle, children }) => {
   `)
 
   return (
-    <div className={container}>
-      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <nav className={nav}>
-        <header className={siteTitle}>
-          <h1>{data.site.siteMetadata.title}</h1>
-        </header>
-        <ul className={navLinks}>
-        <li>
-        </li>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/">
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/about">
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-          <Link className={navLinkText} to="/movies">
-           Movies
-           </Link>
-    </li>
-        </ul>
-      </nav>
-      <main>
-        <h1>{pageTitle}</h1>
-        {children}
-      </main>
-    </div>
+      <div className={container}>
+            <Navbar/>
+            <main className={main}>{children}</main>
+            <Footer/>
+        </div>
+    
   )
 }
 

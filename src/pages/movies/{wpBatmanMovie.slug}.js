@@ -7,6 +7,7 @@ const MoviePage = ({data: {wpBatmanMovie: {batmanMovieFields: movie}}}) => {
     <Layout pageTitle="Movie Template">
       <div>
         <h3>{movie.title}</h3>
+        
         <h1>{movie.writers}</h1>
         <div dangerouslySetInnerHTML={{__html: movie.description}} />
         <p>Time : {movie.time}</p>

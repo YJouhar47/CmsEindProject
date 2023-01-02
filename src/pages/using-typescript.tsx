@@ -15,7 +15,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   data,
   location,
 }) => (
-  <Layout>
+  <Layout pageTitle="Welcome">
     <h1>
       Gatsby supports <b>TypeScript by default</b>
     </h1>
@@ -43,7 +43,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   </Layout>
 )
 
-export const Head: HeadFC<DataProps> = () => <Seo title="Using TypeScript" />
+export const Head: HeadFC<DataProps> = () => <Seo title="Using TypeScript" children={undefined} />
 
 export default UsingTypescript
 
