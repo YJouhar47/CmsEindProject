@@ -28,7 +28,7 @@ const MoviePage = ({data: {wpBatmanMovie: {batmanMovieFields: movie}}}) => {
         <p>Countries : {movie.countries}</p>
         </div>
         </div>
-        <Link to='/movies' className={link}><p>Go back</p></Link>
+        <Link to='/' className={link}><p>Go back</p></Link>
     </Layout>
   )
 }
